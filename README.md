@@ -6,7 +6,9 @@ MuYiYong 的 Codex 插件索引。Codex 通过 `codex plugin marketplace add` �
 
 ## 在 Codex 中使用
 
-需要 Codex CLI 0.172.0+（支持 `git-subdir` 插件来源）和 Node.js 18+。
+在支持 Git 插件来源的 Codex 桌面端打开 **插件 → codex-marketplace**，找到 **Nebula MCP** 并安装。已添加本索引的用户不需要再添加一次。运行时需要 Node.js 18+。
+
+也可使用 Codex CLI 0.172.0+ 添加索引并安装：
 
 ```bash
 # 1. 添加索引仓库
@@ -19,9 +21,9 @@ codex plugin list
 codex plugin add nebula-mcp@codex-marketplace
 ```
 
-安装后重启 Codex，在插件页确认插件已启用。
+安装后重启 Codex，在插件页确认插件已启用。首次启动会联网准备运行时；如果 Codex 提示 MCP 启动超时，等一会儿再开一个对话，必要时重新打开 Codex。
 
-如果想在桌面设置里填写 Nebula 数据库连接参数，请从 [Nebula MCP Release](https://github.com/MuYiYong/nebula-mcp/releases/latest) 下载 `install.py`，运行 `python3 install.py --mode mcp`（Windows 用 `py -3 install.py --mode mcp`），然后打开 **设置 → MCP servers → nebula → 编辑**。仅安装市场插件不会创建这个独立条目；两者可以共存。已有独立条目可以直接编辑，无需重装。
+在 **Nebula MCP** 插件中选择「配置悦数连接（打开本机浏览器）」，或在对话中说「配置悦数连接」。在默认浏览器打开的临时本机页填写地址、用户名和密码，点 **测试并保存**，成功后回 Codex 查询。不用运行安装器，也不用把连接参数发到对话里。设置只保存在本机，重启和升级后继续使用。更多信息见 [Nebula MCP 配置说明](https://github.com/MuYiYong/nebula-mcp#配置连接)。
 
 ### 升级
 
@@ -50,7 +52,7 @@ codex plugin marketplace remove codex-marketplace
 
 | 插件 | 仓库 | 来源目录 | 说明 |
 |------|------|----------|------|
-| `nebula-mcp` | [MuYiYong/nebula-mcp](https://github.com/MuYiYong/nebula-mcp) | `plugins/nebula-mcp` | 在 Codex 中连接悦数图数据库（NebulaGraph 5.x），执行只读 GQL 并展示图、表格、图表与解释。首次启动自动准备运行时；连接配置在 Codex 内完成并持久化。 |
+| `nebula-mcp` | [MuYiYong/nebula-mcp](https://github.com/MuYiYong/nebula-mcp) | `plugins/nebula-mcp` | 在 Codex 中连接悦数图数据库（NebulaGraph 5.x），执行只读 GQL 并展示图、表格、图表与解释。首次启动自动准备运行时；从 Codex 打开本机浏览器配置连接；设置保留在本机。 |
 
 ## 仓库结构
 
