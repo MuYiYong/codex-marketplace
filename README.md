@@ -21,6 +21,8 @@ codex plugin add nebula-mcp@codex-marketplace
 
 安装后重启 Codex，在插件页确认插件已启用。
 
+如果想在桌面设置里填写 Nebula 数据库连接参数，请从 [Nebula MCP Release](https://github.com/MuYiYong/nebula-mcp/releases/latest) 下载 `install.py`，运行 `python3 install.py --mode mcp`（Windows 用 `py -3 install.py --mode mcp`），然后打开 **设置 → MCP servers → nebula → 编辑**。仅安装市场插件不会创建这个独立条目；两者可以共存。已有独立条目可以直接编辑，无需重装。
+
 ### 升级
 
 ```bash
