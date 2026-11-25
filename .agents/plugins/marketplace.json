@@ -11,7 +11,7 @@
         "url": "https://github.com/MuYiYong/nebula-mcp",
         "path": "plugins/nebula-mcp",
         "ref": "main",
-        "sha": "a39a19b5e526ac0d8a43d078e2a9ae892e9c17cb"
+        "sha": "cc79b836690de14ddd2d2bbd2b0fba938cd2bbbd"
       },
       "policy": {
         "installation": "AVAILABLE",

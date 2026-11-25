@@ -48,7 +48,7 @@ codex plugin marketplace remove codex-marketplace
 
 | 插件 | 仓库 | 来源目录 | 说明 |
 |------|------|----------|------|
-| `nebula-mcp` | [MuYiYong/nebula-mcp](https://github.com/MuYiYong/nebula-mcp) | `plugins/nebula-mcp` | 在 Codex 中连接悦数图数据库（NebulaGraph 5.x），执行只读 GQL 并展示图、表格、图表与解释。首次启动自动准备运行时。 |
+| `nebula-mcp` | [MuYiYong/nebula-mcp](https://github.com/MuYiYong/nebula-mcp) | `plugins/nebula-mcp` | 在 Codex 中连接悦数图数据库（NebulaGraph 5.x），执行只读 GQL 并展示图、表格、图表与解释。首次启动自动准备运行时；连接配置在 Codex 内完成并持久化。 |
 
 ## 仓库结构
 
