@@ -1,0 +1,23 @@
+{
+  "name": "codex-marketplace",
+  "interface": {
+    "displayName": "MuYiYong Codex Plugins"
+  },
+  "plugins": [
+    {
+      "name": "nebula-mcp",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/MuYiYong/nebula-mcp",
+        "path": "plugins/nebula-mcp",
+        "ref": "main",
+        "sha": "a39a19b5e526ac0d8a43d078e2a9ae892e9c17cb"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}
